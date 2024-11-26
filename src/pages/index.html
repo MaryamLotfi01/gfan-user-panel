@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Document</title>
   </head>
@@ -16,7 +18,10 @@
         <!-- Logo Container -->
         <div class="h-full py-1 basis-1/5">
           <a href="#" class="h-full flex items-center">
-            <img src="../img/logo type.png" alt="" class="md:h-2/3 lg:h-full transition-all duration-500" />
+            <img
+              src="../img/logo type.png"
+              alt=""
+              class="md:h-2/3 lg:h-full transition-all duration-500" />
           </a>
         </div>
         <!-- Links Container -->
@@ -44,16 +49,33 @@
         <div>
           <!-- Side Bar Show Button -->
           <button class="flex flex-col gap-y-1 w-8" x-on:click="isActiveSideBar=true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           </button>
           <!-- Side Bar Container -->
-          <div class="sidebar-container" x-bind:class="isActiveSideBar?'translate-x-0':'translate-x-full'">
+          <div
+            class="sidebar-container"
+            x-bind:class="isActiveSideBar?'translate-x-0':'translate-x-full'">
             <div class="bg-white w-1/2 sm:w-1/3 flex flex-col p-4">
               <!-- Side Bar Hide Button -->
               <button x-on:click="isActiveSideBar=false">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
               </button>
@@ -66,561 +88,18 @@
                 <a href="#" class="nav-link">Blogs</a>
               </div>
               <!-- Login -->
-              <a href="#" class="bg-primary py-2 text-white rounded-full mt-4 text-center">Login/Register</a>
+              <a href="#" class="bg-primary py-2 text-white rounded-full mt-4 text-center"
+                >Login/Register</a
+              >
             </div>
           </div>
         </div>
       </nav>
     </header>
     <main class="mt-18">
-      <!-- Main Content Header -->
-      <section class="main-header">
-        <!-- Banner -->
-        <div class="main-header-banner" style="background-image: url('../img/banner.jpeg')"></div>
-        <!-- Header Content Container -->
-        <div class="header-content-container">
-          <div class="flex flex-col md:gap-y-8 gap-y-4">
-            <h1 class="header-title">
-              modern <br class="md:inline hidden" />
-              technologies to <br class="md:inline hidden" />
-              our consumers
-            </h1>
-            <h2 class="header-description">Genomics and Biotechnology for medical and research purposes</h2>
-          </div>
-          <a href="#" class="header-btn">Discover More</a>
-        </div>
-      </section>
-      <!-- Introduction -->
-      <section class="py-10 container flex md:flex-row flex-col-reverse items-center gap-y-4 md:gap-x-2 lg:gap-x-0">
-        <div class="basis-[51%] flex flex-col gap-y-8 md:gap-y-4 lg:gap-y-8">
-          <!-- tag -->
-          <div class="tag-container">
-            <span class="tag-icon-container">
-              <svg class="size-7 text-white" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M26.9748 6.77396C26.7916 7.01156 26.63 7.27156 26.4204 7.48356C25.4068 8.51156 24.3732 9.51956 23.3636 10.5516C23.066 10.8556 22.7316 10.998 22.3172 11.0356C20.8388 11.1716 19.3612 11.318 17.8852 11.4764C17.7532 11.4908 17.61 11.5932 17.51 11.6932C15.7068 13.4844 13.9076 15.2796 12.1116 17.078C11.806 17.3844 11.4612 17.526 11.0356 17.3868C10.3956 17.178 10.158 16.4028 10.5708 15.8716C10.6388 15.7836 10.722 15.7076 10.8012 15.6284C12.578 13.854 14.358 12.0828 16.1276 10.3012C16.2428 10.1852 16.3292 9.99796 16.3468 9.83476C16.506 8.37156 16.6508 6.90676 16.7892 5.44116C16.8252 5.05796 16.9748 4.75476 17.2524 4.48276C18.334 3.42196 19.4044 2.34996 20.47 1.27316C20.806 0.933959 21.1748 0.747559 21.6452 0.933159C22.0988 1.11236 22.2508 1.48436 22.2812 1.94916C22.3492 2.99236 22.4436 4.03476 22.5188 5.07716C22.5308 5.24756 22.6012 5.29716 22.762 5.30836C23.766 5.38196 24.7684 5.48836 25.774 5.53396C26.342 5.55956 26.7452 5.76276 26.9748 6.28516V6.77316V6.77396ZM23.8076 7.34836C23.6556 7.33476 23.5788 7.32676 23.502 7.32036C22.8436 7.26516 22.1844 7.22436 21.5284 7.15156C21.0372 7.09716 20.734 6.79076 20.6732 6.30516C20.6188 5.87316 20.5972 5.43636 20.5604 5.00196C20.534 4.69716 20.506 4.39236 20.4732 4.02276C19.9132 4.58436 19.4004 5.08836 18.902 5.60756C18.806 5.70756 18.7308 5.85956 18.7148 5.99556C18.626 6.74036 18.558 7.48836 18.4836 8.23476C18.4436 8.63396 18.4036 9.03316 18.3612 9.45876C19.3108 9.36596 20.2172 9.22836 21.1268 9.20276C21.8396 9.18276 22.346 8.90036 22.7852 8.37396C23.0796 8.02036 23.4348 7.71796 23.8084 7.34676L23.8076 7.34836Z"
-                  fill="currentColor" />
-                <path
-                  d="M11.452 27.1787C6.09365 27.1219 1.51765 23.1619 0.771246 17.8851C-0.0199541 12.2883 3.63605 7.05553 9.20405 5.84593C10.9008 5.47713 12.5992 5.52513 14.2768 5.99153C14.74 6.12033 15.0064 6.47633 15.0112 6.92353C15.016 7.35793 14.7504 7.75153 14.3192 7.85073C14.1032 7.90033 13.8544 7.87553 13.6328 7.82753C10.0752 7.05553 7.04565 7.98593 4.67445 10.7419C1.06245 14.9411 2.37525 21.5403 7.28325 24.1275C12.5296 26.8923 18.896 23.9035 20.092 18.1059C20.356 16.8259 20.32 15.5451 20.0184 14.2691C19.9592 14.0195 19.924 13.7403 19.9752 13.4955C20.0664 13.0651 20.4656 12.8019 20.9032 12.8043C21.3336 12.8067 21.704 13.0755 21.8296 13.5083C22.1136 14.4907 22.2256 15.4955 22.2152 16.5171C22.1624 21.5187 18.5896 25.8419 13.7128 26.8747C12.9704 27.0315 12.2056 27.0803 11.4512 27.1787H11.452Z"
-                  fill="currentColor" />
-                <path
-                  d="M11.6316 12.47C9.50523 12.4244 7.82443 13.8828 7.55643 15.9572C7.31003 17.8684 8.65323 19.7268 10.6084 20.178C12.9484 20.718 15.2724 18.9196 15.3596 16.5156C15.3684 16.2652 15.442 15.9884 15.5716 15.7764C15.7844 15.4276 16.238 15.3164 16.6276 15.4436C17.0396 15.578 17.3124 15.9396 17.3052 16.3908C17.2756 18.1884 16.5988 19.7108 15.202 20.8412C13.258 22.4148 11.0772 22.7044 8.83963 21.5852C6.58043 20.4548 5.48763 18.5212 5.60363 15.9996C5.75163 12.7828 8.64523 10.2804 11.8516 10.538C12.1276 10.5604 12.43 10.6748 12.6524 10.838C12.982 11.0804 13.0476 11.518 12.8844 11.8892C12.7188 12.2668 12.4228 12.4748 12.0052 12.4884C11.8636 12.4932 11.7212 12.4748 11.6316 12.47Z"
-                  fill="currentColor" />
-              </svg>
-            </span>
-            <span class="tag-content">Introduction</span>
-          </div>
-          <!-- title -->
-          <div>
-            <h2 class="font-semibold text-6xl md:text-4xl lg:text-6xl">Startup workforce optimization</h2>
-          </div>
-          <!-- action button and discription -->
-          <div class="flex flex-col gap-y-16 md:gap-y-8 lg:gap-y-16">
-            <p class="text-xl md:text-lg lg:text-xl font-light">Leveraging technology for operational improvement and long-term growth strategies.</p>
-            <a href="#" class="bordered-btn"> Learn More </a>
-          </div>
-        </div>
-        <div class="grow">
-          <img src="../img/introduction.png" alt="" class="w-full aspect-square" />
-        </div>
-      </section>
-      <!-- Services Container -->
-      <section class="py-10">
-        <div class="services-section">
-          <!-- servcices -->
-          <div class="services-container">
-            <!-- service -->
-            <div class="service">
-              <h2 class="service-title">NGS Services</h2>
-              <p class="line-clamp-3">
-                Next Generation Sequencing (NGS) includes a range of sequencing methods that, based on parallel sequencing, enable the simultaneous
-                ...
-              </p>
-              <a href="#" class="service-link">
-                <span>Learn More</span>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-            <!-- service -->
-            <div class="service">
-              <h2 class="service-title">HPC Services</h2>
-              <p class="line-clamp-3">
-                In the past decade, many software programs have been developed alongside advanced genomics and biotechnology techniques to analyze ...
-              </p>
-              <a href="#" class="service-link">
-                <span>Learn More</span>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-          <!-- banner -->
-          <div class="flex-1">
-            <div class="services-banner" style="background-image: url('../img/services.jpg')"></div>
-          </div>
-        </div>
-      </section>
-      <!-- Reviews -->
-      <section class="container py-10">
-        <h2 class="text-6xl font-semibold mb-10">Reviews</h2>
-        <!-- Reviews Container -->
-        <div class="reviews-container">
-          <!-- review -->
-          <div class="review">
-            <!-- user -->
-            <div class="flex items-center gap-x-4">
-              <!-- avatar -->
-              <div class="size-16 rounded-full bg-[#A6F5FF] overflow-hidden">
-                <img src="../img/avatar-1.png" alt="" />
-              </div>
-              <!-- info -->
-              <div>
-                <!-- name -->
-                <p class="text-sm font-bold">Ashley Robinson</p>
-                <!-- stars -->
-                <div class="flex text-yellow-500">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <!-- comment -->
-            <div>
-              <p class="line-clamp-3 text-sm">I recently hired a business coach and was highly impressed with their support and expertise.</p>
-            </div>
-          </div>
-          <!-- review -->
-          <div class="review">
-            <!-- user -->
-            <div class="flex items-center gap-x-4">
-              <!-- avatar -->
-              <div class="size-16 rounded-full bg-[#A6F5FF] overflow-hidden">
-                <img src="../img/avatar-2.png" alt="" />
-              </div>
-              <!-- info -->
-              <div>
-                <!-- name -->
-                <p class="text-sm font-bold">Jay Rutherford</p>
-                <!-- stars -->
-                <div class="flex text-yellow-500">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <!-- comment -->
-            <div>
-              <p class="line-clamp-3 text-sm">
-                I highly recommend a business coach for anyone starting or growing their business. They offered invaluable guidance and support to me.
-              </p>
-            </div>
-          </div>
-          <!-- review -->
-          <div class="review">
-            <!-- user -->
-            <div class="flex items-center gap-x-4">
-              <!-- avatar -->
-              <div class="size-16 rounded-full bg-[#A6F5FF] overflow-hidden">
-                <img src="../img/avatar-3.png" alt="" />
-              </div>
-              <!-- info -->
-              <div>
-                <!-- name -->
-                <p class="text-sm font-bold">Sarah Jackson</p>
-                <!-- stars -->
-                <div class="flex text-yellow-500">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <!-- comment -->
-            <div>
-              <p class="line-clamp-3 text-sm">
-                I hesitated to invest in consulting services initially, but working with a business coach turned out to be one of my best decisions
-                ever.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Team -->
-      <section class="container py-10 gap-y-8 flex flex-col">
-        <!-- tag -->
-        <div class="tag-container">
-          <span class="tag-icon-container">
-            <svg class="size-7 text-white" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M14.1048 0.0183105C14.6832 0.0183105 15.2608 0.0183105 15.8392 0.0183105C15.9208 0.0335105 16.0024 0.0575105 16.0848 0.0639105C18.256 0.226311 20.2856 0.84871 22.168 1.93991C22.3352 2.03671 22.4408 2.00951 22.592 1.91911C23.9848 1.08391 25.7432 1.30391 26.8872 2.44711C28.0264 3.58551 28.252 5.32311 27.4256 6.70871C27.3136 6.89591 27.3144 7.02231 27.4224 7.20711C28.264 8.65111 28.8264 10.1983 29.1016 11.8471C29.1888 12.3679 29.248 12.8935 29.32 13.4175V15.1479C29.304 15.2375 29.2792 15.3263 29.272 15.4167C29.1072 17.5535 28.4952 19.5543 27.4232 21.4119C27.3176 21.5951 27.3112 21.7215 27.4232 21.9103C28.2512 23.2951 28.0264 25.0311 26.888 26.1719C25.7544 27.3087 24.0064 27.5367 22.6192 26.7151C22.4352 26.6063 22.3104 26.6023 22.12 26.7055C17.3744 29.2671 12.6224 29.2551 7.8768 26.7055C7.6848 26.6023 7.5608 26.6079 7.3776 26.7159C5.9888 27.5375 4.2392 27.3087 3.1088 26.1711C1.9632 25.0191 1.7448 23.2719 2.5872 21.8855C2.692 21.7135 2.6816 21.5999 2.5872 21.4375C1.7424 19.9847 1.172 18.4311 0.896799 16.7735C0.810399 16.2527 0.750399 15.7279 0.679199 15.2055C0.679199 14.6103 0.679199 14.0143 0.679199 13.4191C0.695999 13.3383 0.721599 13.2575 0.727999 13.1759C0.897599 11.0415 1.5128 9.04391 2.5872 7.19031C2.6912 7.01031 2.6792 6.89031 2.576 6.71751C1.7496 5.33911 1.9696 3.59751 3.1032 2.45751C4.236 1.31831 5.9816 1.08231 7.3664 1.90071C7.5744 2.02391 7.7128 2.01191 7.9136 1.89591C9.344 1.07031 10.876 0.515911 12.5056 0.241511C13.036 0.151911 13.5712 0.0927103 14.1048 0.0199103V0.0183105ZM4.0152 20.5319C5.4896 19.9103 6.8616 20.0455 8.0184 21.1519C9.2384 22.3191 9.4104 23.7375 8.7696 25.2695C12.4864 27.4895 17.5816 27.4591 21.2304 25.2679C20.5984 23.7695 20.752 22.3719 21.9224 21.2071C23.0912 20.0447 24.4936 19.8991 25.9864 20.5287C28.3488 16.5255 28.0248 11.3975 25.9696 8.09671C24.2568 8.67511 23.0144 8.50151 21.9584 7.45031C20.7688 6.26711 20.5928 4.86951 21.2296 3.34871C17.5224 1.12871 12.4232 1.15751 8.7688 3.35111C9.4024 4.84951 9.2448 6.24791 8.076 7.41111C6.9088 8.57271 5.5048 8.71911 4.012 8.08951C1.7944 11.8511 1.8264 16.8311 4.0144 20.5311L4.0152 20.5319ZM22.552 4.91111C22.544 5.92871 23.3696 6.76711 24.3848 6.77191C25.392 6.77751 26.2272 5.96391 26.2416 4.96391C26.256 3.94551 25.4376 3.10071 24.4232 3.08951C23.4032 3.07831 22.56 3.89911 22.552 4.91111ZM24.4048 21.8471C23.3872 21.8431 22.552 22.6727 22.552 23.6871C22.552 24.6911 23.372 25.5207 24.3752 25.5295C25.3944 25.5391 26.2352 24.7167 26.2424 23.7031C26.2488 22.6863 25.4224 21.8503 24.4056 21.8471H24.4048ZM7.4472 23.6943C7.4496 22.6783 6.6192 21.8463 5.6016 21.8471C4.596 21.8471 3.7656 22.6679 3.7576 23.6687C3.7488 24.6863 4.5744 25.5247 5.5896 25.5303C6.608 25.5359 7.4448 24.7095 7.4472 23.6943ZM5.5936 3.08871C4.5776 3.09191 3.7504 3.92791 3.7568 4.94551C3.7632 5.94711 4.5912 6.76951 5.596 6.77191C6.6136 6.77431 7.4472 5.94471 7.4464 4.92871C7.4464 3.91351 6.612 3.08551 5.5928 3.08871H5.5936Z"
-                fill="currentColor" />
-              <path
-                d="M19.8628 13.0195C20.2812 13.0387 20.7188 12.9483 20.9916 13.3259C21.1044 13.4819 21.1892 13.6947 21.194 13.8843C21.2084 14.4291 20.8628 14.6387 19.8628 14.7187V15.0099C19.8628 16.0611 19.8628 17.1123 19.8628 18.1635C19.8628 18.7803 19.5388 19.1691 19.0228 19.1651C18.498 19.1611 18.1204 18.6979 18.1828 18.1899C18.186 18.1627 18.178 18.1347 18.17 18.0571C16.6092 17.7019 15.0924 17.1019 13.41 16.8675C13.5692 17.4331 13.7028 17.9107 13.8372 18.3875C13.8924 18.5843 13.9532 18.7795 14.0044 18.9771C14.1284 19.4587 13.8868 19.8939 13.4268 20.0267C12.9908 20.1523 12.5444 19.9107 12.402 19.4427C12.1748 18.6963 11.9588 17.9467 11.7588 17.1931C11.7044 16.9875 11.6076 16.9187 11.406 16.8875C9.79722 16.6395 8.67322 15.2267 8.79482 13.6211C8.91402 12.0523 10.2308 10.8243 11.8284 10.7923C11.8564 10.7923 11.8844 10.7891 11.9124 10.7923C13.4524 10.9339 14.9268 10.6243 16.3804 10.1555C16.902 9.98751 17.4372 9.85791 17.9676 9.71951C18.1244 9.67871 18.1884 9.61311 18.19 9.43791C18.194 8.91631 18.558 8.55231 19.0364 8.56031C19.514 8.56831 19.8596 8.94191 19.8612 9.46511C19.8644 10.5443 19.862 11.6235 19.862 12.7019C19.862 12.8011 19.862 12.9011 19.862 13.0179L19.8628 13.0195ZM15.0084 12.2667L15.0084 15.4611C16.0612 15.7507 17.106 16.0379 18.17 16.3307V11.3963C17.1052 11.6899 16.0604 11.9771 15.0084 12.2667ZM13.3076 12.4683C12.8044 12.4683 12.33 12.4619 11.8572 12.4699C11.1348 12.4811 10.5492 13.0115 10.4716 13.7123C10.3932 14.4227 10.8612 15.1163 11.586 15.2139C12.1476 15.2891 12.7284 15.2291 13.3076 15.2291L13.3076 12.4691V12.4683Z"
-                fill="currentColor" />
-            </svg>
-          </span>
-          <span class="tag-content">COMMUNITY</span>
-        </div>
-        <!-- title -->
-        <div>
-          <h2 class="font-semibold text-6xl md:text-4xl lg:text-6xl">
-            Gain insights from <br />
-            experts.
-          </h2>
-        </div>
-        <!-- Team Memebers -->
-        <div class="team-container">
-          <!-- member -->
-          <div class="member-container">
-            <!-- image -->
-            <div class="rounded-3xl overflow-hidden">
-              <img src="../img/team/member-1.png" class="w-full" alt="" />
-            </div>
-            <!-- detail -->
-            <div class="member-detail">
-              <!-- name -->
-              <p class="text-3xl">Ryan White</p>
-              <!-- description -->
-              <p class="text-sm">Proident incididunt aute excepteur sint elit magna sint qui aute.</p>
-            </div>
-          </div>
-          <!-- member -->
-          <div class="member-container">
-            <!-- image -->
-            <div class="rounded-3xl overflow-hidden">
-              <img src="../img/team/member-2.png" class="w-full" alt="" />
-            </div>
-            <!-- detail -->
-            <div class="member-detail">
-              <!-- name -->
-              <p class="text-3xl">Mark Taylor</p>
-              <!-- description -->
-              <p class="text-sm">Ex quis ex labore non sit culpa enim proident voluptate incididunt.</p>
-            </div>
-          </div>
-          <!-- member -->
-          <div class="member-container">
-            <!-- image -->
-            <div class="rounded-3xl overflow-hidden">
-              <img src="../img/team/member-1.png" class="w-full" alt="" />
-            </div>
-            <!-- detail -->
-            <div class="member-detail">
-              <!-- name -->
-              <p class="text-3xl">Emma Wilson</p>
-              <!-- description -->
-              <p class="text-sm">Proident enim velit laboris ea velit Lorem excepteur ipsum.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FAQ -->
-      <section class="container py-10 gap-y-8 flex flex-col">
-        <!-- tag -->
-        <div class="tag-container">
-          <span class="tag-icon-container">
-            <svg class="size-7" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17.9852 0.939636C18.6892 0.948436 19.3668 1.15964 19.9564 1.58204C20.5284 1.99564 21.0564 2.47084 21.602 2.91964C21.7692 3.06044 21.9276 3.20124 22.0684 3.36844C22.9484 4.36284 24.0484 4.77644 25.3772 4.74124C26.178 4.71484 26.9964 4.75884 27.7884 4.89084C29.742 5.21644 30.886 6.46604 31.0708 8.45484C31.1588 9.42284 31.1852 10.3996 31.2204 11.3676C31.2468 12.0364 31.458 12.626 31.9156 13.1276C32.382 13.638 32.8748 14.1396 33.3236 14.6676C33.6932 15.0988 34.0628 15.5388 34.362 16.014C35.1716 17.3076 35.154 18.6188 34.3356 19.9036C34.0628 20.326 33.746 20.722 33.4116 21.1004C33.0244 21.5492 32.6108 21.9804 32.1972 22.4028C31.5636 23.054 31.2028 23.8108 31.1852 24.7436C31.1764 25.606 31.15 26.4596 31.0708 27.322C30.886 29.522 29.566 30.8596 27.366 31.0708C26.4332 31.1588 25.5004 31.1852 24.5676 31.2116C23.8548 31.238 23.2388 31.4668 22.7108 31.9508C22.1652 32.4612 21.6196 32.9716 21.0652 33.4644C20.7308 33.7548 20.3876 34.0364 20.018 34.274C18.6364 35.1804 17.2284 35.1892 15.8732 34.2476C15.2132 33.79 14.5708 33.2708 14.034 32.6812C13.0044 31.5548 11.7724 31.062 10.25 31.1412C9.54601 31.1764 8.83321 31.1148 8.13801 31.0004C6.15801 30.6572 5.0228 29.4164 4.838 27.41C4.75 26.4508 4.7236 25.4916 4.6884 24.5324C4.662 23.846 4.442 23.2476 3.9844 22.7372C3.4916 22.2004 2.9812 21.6636 2.49721 21.118C2.1716 20.7484 1.85481 20.3612 1.59081 19.9476C0.728405 18.6012 0.719605 17.2196 1.62601 15.8996C2.09241 15.2132 2.62921 14.5532 3.23641 13.9988C4.35401 12.9692 4.82921 11.746 4.75001 10.2412C4.71481 9.52844 4.77641 8.79804 4.89961 8.09404C5.22521 6.15804 6.47481 5.01404 8.43721 4.82044C9.38761 4.72364 10.3556 4.70604 11.3148 4.67084C12.0452 4.64444 12.67 4.40684 13.2068 3.92284C13.946 3.25404 14.6764 2.56764 15.442 1.92524C16.1636 1.32684 16.9996 0.939636 17.994 0.939636H17.9852ZM32.5756 17.8708C32.3996 17.554 32.25 17.1844 32.0124 16.8852C31.4668 16.2252 30.8772 15.5916 30.2876 14.9668C29.3108 13.9284 28.8004 12.7052 28.774 11.2708C28.7564 10.3996 28.7212 9.52844 28.6332 8.65724C28.5452 7.72444 28.1404 7.32844 27.2076 7.24044C26.5564 7.17884 25.8964 7.13484 25.2364 7.15244C23.3796 7.18764 21.8044 6.58044 20.4932 5.24284C19.9652 4.69724 19.3932 4.19564 18.7948 3.73804C18.1348 3.22764 17.7652 3.24524 17.0788 3.72044C16.8324 3.89644 16.5948 4.09004 16.366 4.29244C15.8996 4.71484 15.4332 5.14604 14.9756 5.58604C13.9284 6.58044 12.6964 7.09084 11.2444 7.10844C10.382 7.11724 9.52841 7.16124 8.6748 7.24044C7.7156 7.33724 7.3284 7.73324 7.23161 8.68364C7.17 9.33484 7.1348 9.99484 7.1436 10.6548C7.1788 12.494 6.5892 14.078 5.24281 15.354C4.9172 15.6708 4.60921 16.0052 4.31001 16.3484C4.07241 16.6124 3.86121 16.894 3.65001 17.1756C3.28041 17.6684 3.27161 18.1788 3.64121 18.6804C3.86121 18.9796 4.08121 19.27 4.32761 19.5428C4.72361 19.9828 5.12841 20.414 5.54201 20.8452C6.55401 21.91 7.0908 23.1596 7.1084 24.638C7.1172 25.5004 7.16121 26.354 7.24041 27.2076C7.32841 28.1404 7.7332 28.5364 8.666 28.6244C9.34361 28.686 10.03 28.7212 10.7076 28.7124C12.5204 28.686 14.0692 29.2844 15.3364 30.5956C15.7588 31.0356 16.2076 31.4404 16.674 31.8364C17.7036 32.7076 18.1524 32.7164 19.182 31.8452C19.7716 31.3524 20.326 30.8156 20.8892 30.2788C21.9364 29.2844 23.1684 28.774 24.6204 28.7564C25.4828 28.7476 26.3364 28.7036 27.19 28.6244C28.1492 28.5276 28.5364 28.1316 28.6332 27.1812C28.6948 26.5652 28.73 25.9404 28.7212 25.3244C28.6684 23.3972 29.2844 21.7516 30.7012 20.4228C31.0268 20.1236 31.326 19.7892 31.6076 19.4548C31.8628 19.1556 32.1004 18.8476 32.3116 18.5132C32.426 18.3372 32.47 18.1172 32.5668 17.8532L32.5756 17.8708Z"
-                fill="white" />
-              <path
-                d="M19.1732 20.2544C19.1556 20.3864 19.1556 20.5008 19.138 20.6064C19.0148 21.2224 18.4516 21.6448 17.8444 21.592C17.246 21.5392 16.762 21.0464 16.7356 20.4392C16.718 20.0344 16.7268 19.6296 16.7356 19.2248C16.7444 18.468 17.2284 17.984 17.994 17.9576C19.49 17.896 20.6516 16.9104 20.9244 15.4672C21.2324 13.8568 20.1676 12.2728 18.5572 11.956C16.9116 11.6304 15.3188 12.6688 14.9844 14.288C14.9404 14.4992 14.9228 14.7104 14.914 14.9304C14.87 15.6344 14.342 16.1624 13.6644 16.1448C12.9956 16.1272 12.4852 15.5816 12.4852 14.8688C12.4852 12.1232 14.5884 9.82639 17.422 9.48319C20.0444 9.16639 22.6316 11.0232 23.2564 13.6456C23.934 16.5056 22.2884 19.3304 19.4636 20.1752C19.3668 20.2016 19.2788 20.2368 19.182 20.2632L19.1732 20.2544Z"
-                fill="white" />
-              <path
-                d="M19.7716 25.7824C19.7716 26.7944 18.9532 27.6216 17.95 27.6216C16.9556 27.6216 16.1372 26.812 16.1284 25.8176C16.1284 24.8056 16.9468 23.9784 17.95 23.9784C18.9444 23.9784 19.7628 24.788 19.7716 25.7824Z"
-                fill="white" />
-            </svg>
-          </span>
-          <span class="tag-content">FAQ</span>
-        </div>
-        <!-- title -->
-        <div>
-          <h2 class="font-semibold text-6xl md:text-4xl lg:text-6xl">
-            Have Questions? <br />
-            Get Answers
-          </h2>
-        </div>
-        <!-- Container -->
-        <div class="flex flex-col">
-          <!-- Q&A -->
-          <div class="faq-item">
-            <!-- Question -->
-            <div class="faq-question">
-              <p class="text-3xl">How can a personal consultant help me manage my time?</p>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-              </span>
-            </div>
-            <!-- Answer -->
-            <div class="faq-answer">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laudantium sequi aperiam. Quis accusamus cum est impedit cumque amet
-              alias in sapiente, nesciunt, blanditiis, odio harum laborum officiis. In, odit.
-            </div>
-          </div>
-          <!-- Q&A -->
-          <div class="faq-item">
-            <!-- Question -->
-            <div class="faq-question">
-              <p class="text-3xl">What strategies can a personal consultant help me develop for growth and success?</p>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-              </span>
-            </div>
-            <!-- Answer -->
-            <div class="faq-answer">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laudantium sequi aperiam. Quis accusamus cum est impedit cumque amet
-              alias in sapiente, nesciunt, blanditiis, odio harum laborum officiis. In, odit.
-            </div>
-          </div>
-          <!-- Q&A -->
-          <div class="faq-item">
-            <!-- Question -->
-            <div class="faq-question">
-              <p class="text-3xl">What experience should I seek in a personal consultant?</p>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-              </span>
-            </div>
-            <!-- Answer -->
-            <div class="faq-answer">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laudantium sequi aperiam. Quis accusamus cum est impedit cumque amet
-              alias in sapiente, nesciunt, blanditiis, odio harum laborum officiis. In, odit.
-            </div>
-          </div>
-          <!-- Q&A -->
-          <div class="faq-item">
-            <!-- Question -->
-            <div class="faq-question">
-              <p class="text-3xl">How do I know if a personal consultant is the right fit for me and my business?</p>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-              </span>
-            </div>
-            <!-- Answer -->
-            <div class="faq-answer">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laudantium sequi aperiam. Quis accusamus cum est impedit cumque amet
-              alias in sapiente, nesciunt, blanditiis, odio harum laborum officiis. In, odit.
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Recent Blogs -->
-      <section class="py-10 bg-secondary rounded-3xl">
-        <div class="container flex flex-col gap-y-8">
-          <!-- title -->
-          <div>
-            <h2 class="font-semibold text-6xl md:text-4xl lg:text-6xl">Recent Blog Posts & Update</h2>
-          </div>
-          <!-- Recent Blogs Container -->
-          <div class="recent-blogs-container">
-            <!-- blog -->
-            <div class="recent-blog-item">
-              <!-- image -->
-              <div class="rounded-3xl overflow-hidden">
-                <img src="../img/recent-blog-1.png" class="w-full" alt="" />
-              </div>
-              <!-- detail -->
-              <div class="recent-blog-item-detail">
-                <!-- title -->
-                <p class="text-3xl">Equity</p>
-                <!-- description -->
-                <p class="text-sm">In aliquip reprehenderit consectetur do ad in. Voluptate occaecat est est</p>
-                <!-- tag and link -->
-                <div class="grow flex items-end">
-                  <div class="flex-1 flex justify-between items-center">
-                    <!-- tag -->
-                    <a href="#" class="bg-primary/20 text-primary py-2 px-3 capitalize rounded-full text-sm">Skills</a>
-                    <!-- link -->
-                    <a href="#" class="flex gap-x-1">
-                      <span>Learn More</span>
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="size-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- blog -->
-            <div class="recent-blog-item">
-              <!-- image -->
-              <div class="rounded-3xl overflow-hidden">
-                <img src="../img/recent-blog-2.png" class="w-full" alt="" />
-              </div>
-              <!-- detail -->
-              <div class="recent-blog-item-detail">
-                <!-- title -->
-                <p class="text-3xl">Diversity</p>
-                <!-- description -->
-                <p class="text-sm">Amet eu excepteur deserunt ullamco enim ullamco Lorem in fugiat aliquip cupidatat</p>
-                <!-- tag and link -->
-                <div class="grow flex items-end">
-                  <div class="flex-1 flex justify-between items-center">
-                    <!-- tag -->
-                    <a href="#" class="bg-primary/20 text-primary py-2 px-3 capitalize rounded-full text-sm">Skills</a>
-                    <!-- link -->
-                    <a href="#" class="flex gap-x-1">
-                      <span>Learn More</span>
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="size-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- blog -->
-            <div class="recent-blog-item">
-              <!-- image -->
-              <div class="rounded-3xl overflow-hidden">
-                <img src="../img/recent-blog-3.png" class="w-full" alt="" />
-              </div>
-              <!-- detail -->
-              <div class="recent-blog-item-detail">
-                <!-- title -->
-                <p class="text-3xl">Financial</p>
-                <!-- description -->
-                <p class="text-sm">Elit ea excepteur ea laboris incididunt in pariatur sint reprehenderit magna officia</p>
-                <!-- tag and link -->
-                <div class="grow flex items-end">
-                  <div class="flex-1 flex justify-between items-center">
-                    <!-- tag -->
-                    <a href="#" class="bg-primary/20 text-primary py-2 px-3 capitalize rounded-full text-sm">Skills</a>
-                    <!-- link -->
-                    <a href="#" class="flex gap-x-1">
-                      <span>Learn More</span>
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="size-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section class="container h-10 border border-primary rounded-lg flex">
+        <div class="basis-[30%] h-full bg-primary rounded-lg"></div>
+        <div class="grow h-full"></div>
       </section>
     </main>
     <br />
