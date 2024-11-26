@@ -1,3 +1,122 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  font-family: "Raleway";
+}
+@layer components {
+  .container {
+    @apply w-11/12 md:w-[82%] mx-auto;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .navbar {
+    @apply md:px-5 xl:px-10 hidden md:flex justify-between h-18 fixed top-0 w-full max-w-[1920px] bg-white transition-all duration-500;
+  }
+  .responsive-navbar {
+    @apply md:hidden flex h-16 justify-between items-center px-4 fixed top-0 right-0 w-full bg-white;
+  }
+  .login-btn {
+    @apply md:py-2 md:px-6 md:text-sm lg:py-3 lg:px-9 lg:text-base bg-primary rounded-full text-white transition-all duration-500;
+  }
+  .nav-links-container {
+    @apply flex items-center md:text-base lg:text-lg text-content;
+  }
+  .nav-link {
+    @apply md:px-3 lg:px-6 hover:text-primary transition-all duration-500;
+  }
+  .nav-link.active {
+    @apply text-primary font-bold;
+  }
+  .sidebar-container {
+    @apply absolute bg-black/20 w-full top-0 right-0 h-screen backdrop-blur-sm flex justify-end transition-all duration-500;
+  }
+  .main-header {
+    @apply bg-primary flex flex-col md:flex-row md:h-[calc(100vh-4.5rem)] gap-y-12 gap-x-12 xl:gap-x-24 pb-4 md:pb-0;
+  }
+  .main-header-banner {
+    @apply h-[calc((100vh-4.5rem)/100*56)] md:h-full md:basis-[56%] shrink-0 bg-cover rounded-b-[50px] md:rounded-bl-none md:rounded-r-[50px];
+  }
+  .header-content-container {
+    @apply flex flex-col sm:flex-row md:flex-col justify-center gap-y-8 px-4 md:px-0;
+  }
+  .header-title {
+    @apply text-white text-4xl xl:text-5xl capitalize leading-[48px] md:leading-[68px] xl:leading-[68px];
+  }
+  .header-btn {
+    @apply px-6 py-3 bg-accent text-black text-lg rounded-full size-fit shrink-0;
+  }
+  .header-description {
+    @apply text-lg xl:text-xl text-white;
+  }
+  .tag-container {
+    @apply flex bg-primary/20 w-fit rounded-full flex-center;
+  }
+  .tag-icon-container {
+    @apply bg-primary size-12 rounded-full flex-center;
+  }
+  .tag-content {
+    @apply uppercase px-4 font-medium;
+  }
+  .bordered-btn {
+    @apply px-6 py-3 border border-accent rounded-full text-accent w-fit hover:bg-accent hover:text-white transition-all duration-300;
+  }
+  .services-section {
+    @apply w-full flex flex-col-reverse gap-y-6 md:flex-row md:h-[35rem] py-18 md:px-16 lg:px-24 xl:px-32 bg-primary rounded-3xl md:gap-x-20 lg:gap-x-32 xl:gap-x-[12.5rem];
+  }
+  .services-container {
+    @apply flex flex-1 shrink-0 flex-col sm:flex-row md:flex-col gap-y-3 sm:gap-x-3 md:gap-y-6 w-11/12 mx-auto md:w-full;
+  }
+  .service {
+    @apply pt-8 px-8 pb-5 bg-white rounded-2xl flex flex-col flex-1 justify-between;
+  }
+  .service-title {
+    @apply text-3xl font-medium;
+  }
+  .service-link {
+    @apply self-end flex items-center gap-x-2 text-accent font-medium;
+  }
+  .services-banner {
+    @apply w-11/12 mx-auto aspect-video md:aspect-auto md:size-full rounded-3xl bg-cover bg-left;
+  }
+  .reviews-container {
+    @apply bg-primary py-12 px-7 md:px-14 rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  .review {
+    @apply flex flex-col gap-y-6 bg-white p-6 rounded-3xl;
+  }
+  .review:last-child {
+    @apply md:col-span-2 lg:col-span-1;
+  }
+  .team-container {
+    @apply flex flex-col lg:flex-row justify-between gap-6;
+  }
+  .member-container {
+    @apply bg-secondary p-6 rounded-3xl flex flex-col sm:flex-row md:flex-col gap-6 hover:bg-primary hover:text-white cursor-default transition-all duration-300;
+  }
+  .member-detail {
+    @apply flex flex-col gap-y-6;
+  }
+  .faq-item {
+    @apply py-5 border-t border-black;
+  }
+  .faq-item:last-child {
+    @apply border-b;
+  }
+  .faq-question {
+    @apply flex justify-between cursor-pointer select-none;
+  }
+  .faq-answer {
+    @apply text-content px-6 py-3 hidden;
+  }
+  .recent-blogs-container {
+    @apply flex flex-col lg:flex-row justify-between gap-6;
+  }
+  .recent-blog-item {
+    @apply bg-white p-6 rounded-3xl flex flex-col sm:flex-row md:flex-col gap-6;
+  }
+  .recent-blog-item-detail {
+    @apply flex flex-col gap-y-6;
+  }
+}
