@@ -2,7 +2,20 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#101139",
+        secondary: "#F3F4F6",
+        accent: "#20A4F3",
+        content: "#565E6C",
+      },
+      spacing: {
+        18: "4.5rem",
+      },
+      fontFamily: {
+        raleway: "Raleway",
+      },
+    },
   },
   plugins: [],
 };
