@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Document</title>
   </head>
@@ -16,7 +18,10 @@
         <!-- Logo Container -->
         <div class="h-full py-1 basis-1/5">
           <a href="#" class="h-full flex items-center">
-            <img src="../img/logo type.png" alt="" class="md:h-2/3 lg:h-full transition-all duration-500" />
+            <img
+              src="../img/logo type.png"
+              alt=""
+              class="md:h-2/3 lg:h-full transition-all duration-500" />
           </a>
         </div>
         <!-- Links Container -->
@@ -44,16 +49,33 @@
         <div>
           <!-- Side Bar Show Button -->
           <button class="flex flex-col gap-y-1 w-8" x-on:click="isActiveSideBar=true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           </button>
           <!-- Side Bar Container -->
-          <div class="sidebar-container" x-bind:class="isActiveSideBar?'translate-x-0':'translate-x-full'">
+          <div
+            class="sidebar-container"
+            x-bind:class="isActiveSideBar?'translate-x-0':'translate-x-full'">
             <div class="bg-white w-1/2 sm:w-1/3 flex flex-col p-4">
               <!-- Side Bar Hide Button -->
               <button x-on:click="isActiveSideBar=false">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
               </button>
@@ -66,7 +88,9 @@
                 <a href="#" class="nav-link">Blogs</a>
               </div>
               <!-- Login -->
-              <a href="#" class="bg-primary py-2 text-white rounded-full mt-4 text-center">Login/Register</a>
+              <a href="#" class="bg-primary py-2 text-white rounded-full mt-4 text-center"
+                >Login/Register</a
+              >
             </div>
           </div>
         </div>
@@ -80,7 +104,11 @@
             <div class="flex gap-x-2 items-center">
               <div class="bg-white size-20 rounded-full flex-center shrink-0">
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-10">
                     <path
                       fill-rule="evenodd"
                       d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
@@ -98,9 +126,13 @@
             <!-- Menu -->
             <div class="flex flex-col gap-y-3 overflow-auto grow">
               <a href="#" class="bg-white text-primary py-3 px-6 rounded-lg">Dashboard</a>
-              <a href="#" class="text-secondary py-3 px-6 border border-white rounded-lg">Comments</a>
+              <a href="#" class="text-secondary py-3 px-6 border border-white rounded-lg"
+                >Comments</a
+              >
               <a href="#" class="text-secondary py-3 px-6 border border-white rounded-lg">Forms</a>
-              <a href="#" class="text-secondary py-3 px-6 border border-white rounded-lg">Account</a>
+              <a href="#" class="text-secondary py-3 px-6 border border-white rounded-lg"
+                >Account</a
+              >
             </div>
           </div>
           <!-- Logout -->
@@ -122,7 +154,17 @@
             <a href="#" class="text-secondary">Logout</a>
           </div>
         </div>
-        <div class="grow h-full"></div>
+        <div class="grow h-full flex items-center justify-center">
+          <div class="space-y-8">
+            <p class="text-2xl flex justify-center">welcome To Dashboard</p>
+            <div>
+              <img src="../img/a_abstract_image_for_user_panel_dashboard_with_blue_and_white_theme_m94kkgvfv2yu87s9jl8y_3 1.png" alt="">
+            </div>
+            
+          </div>
+            
+          </div>
+        </div>
       </section>
     </main>
     <br />
