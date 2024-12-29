@@ -9,8 +9,12 @@ module.exports = {
         accent: "#20A4F3",
         content: "#565E6C",
       },
+      borderRadius: {
+        5: "1.25rem",
+      },
       spacing: {
         18: "4.5rem",
+        15: "3.75rem",
       },
       fontFamily: {
         raleway: "Raleway",
