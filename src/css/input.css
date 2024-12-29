@@ -35,4 +35,11 @@
   .responsive-sidebar-link.active {
     @apply text-white bg-primary;
   }
+  .user-table td,
+  .user-table th {
+    @apply py-4 px-2;
+  }
+  .user-table tr:nth-child(even) {
+    @apply bg-secondary;
+  }
 }
