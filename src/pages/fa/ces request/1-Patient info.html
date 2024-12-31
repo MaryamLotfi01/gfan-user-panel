@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../jalalidatepicker/persian-datepicker.min.css" />
     <link rel="stylesheet" href="../../../css/main.css" />
     <title>Document</title>
   </head>
@@ -149,22 +150,33 @@
             <!-- Inputs -->
             <div class="grid grid-cols-12 gap-4" x-data="{consanguinity:''}">
               <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">نام بیمار</span>
                 <input type="text" class="request-input" placeholder="نام بیمار" />
                 <span class="text-xs font-semibold text-red-600">*نام بیمار اجباری می باشد</span>
               </div>
               <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">نام خانوادگی بیمار</span>
                 <input type="text" class="request-input" placeholder="نام خانوادگی بیمار" />
                 <span class="text-xs font-semibold text-red-600">*نام خانوادگی بیمار اجباری می باشد</span>
               </div>
               <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">تاریخ تولد بیمار</span>
+                <input type="text" id="birthdate" class="hidden" name="birthdate" />
+                <input type="text" id="birthdate_view" class="request-input" placeholder="تاریخ تولد بیمار" />
+                <span class="text-xs font-semibold text-red-600">*نام خانوادگی بیمار اجباری می باشد</span>
+              </div>
+              <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">شماره تماس بیمار</span>
                 <input type="text" class="request-input" placeholder="شماره تماس بیمار" />
                 <span class="text-xs font-semibold text-red-600">*شماره تماس بیمار اجباری می باشد</span>
               </div>
               <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">شماره تماس همراه بیمار</span>
                 <input type="text" class="request-input" placeholder="شماره تماس همراه بیمار" />
                 <span class="text-xs font-semibold text-red-600">*شماره تماس همراه بیمار اجباری می باشد</span>
               </div>
               <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">جنسیت بیمار</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm">
                   <option value="" selected disabled>جنسیت بیمار</option>
                   <option value="">زن</option>
@@ -173,6 +185,7 @@
                 <span class="text-xs font-semibold text-red-600">*جنسیت بیمار اجباری می باشد</span>
               </div>
               <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">قومیت بیمار</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm">
                   <option value="" selected disabled>قومیت بیمار</option>
                   <option value="1">فارس</option>
@@ -191,6 +204,7 @@
                 <span class="text-xs font-semibold text-red-600">*قومیت بیمار اجباری می باشد</span>
               </div>
               <div class="col-span-3 flex flex-col gap-y-2">
+                <span class="text-xs font-semibold">خویشاوندی</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm" x-model="consanguinity">
                   <option value="" selected disabled>خویشاوندی</option>
                   <option value="0">خیر</option>
@@ -199,6 +213,8 @@
                 <span class="text-xs font-semibold text-red-600">*خیشاوندی اجباری می باشد</span>
               </div>
               <div class="col-span-12 flex flex-col gap-y-2" x-show="consanguinity==1">
+                <span class="text-xs font-semibold">توضیحات خیشاوندی</span>
+
                 <textarea class="request-input" placeholder="توضیحات خیشاوندی"></textarea>
                 <span class="text-xs font-semibold text-red-600">*توضیحات خیشاوندی اجباری می باشد</span>
               </div>
@@ -212,5 +228,15 @@
     </section>
     <script src="../../../js/jquery-3.5.1.min.js"></script>
     <script src="../../../js/Alpine.min.js"></script>
+    <script src="../../../jalalidatepicker/persian-datepicker.min.js"></script>
+    <script src="../../../jalalidatepicker/persian-date.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("#birthdate_view").persianDatepicker({
+          format: "YYYY/MM/DD",
+          altField: "#start_date",
+        });
+      });
+    </script>
   </body>
 </html>
