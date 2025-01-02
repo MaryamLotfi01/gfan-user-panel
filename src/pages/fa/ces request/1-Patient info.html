@@ -149,33 +149,33 @@
             </div>
             <!-- Inputs -->
             <div class="grid grid-cols-12 gap-4" x-data="{consanguinity:''}">
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">نام بیمار</span>
                 <input type="text" class="request-input" placeholder="نام بیمار" />
                 <span class="text-xs font-semibold text-red-600">*نام بیمار اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">نام خانوادگی بیمار</span>
                 <input type="text" class="request-input" placeholder="نام خانوادگی بیمار" />
                 <span class="text-xs font-semibold text-red-600">*نام خانوادگی بیمار اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">تاریخ تولد بیمار</span>
                 <input type="text" id="birthdate" class="hidden" name="birthdate" />
                 <input type="text" id="birthdate_view" class="request-input" placeholder="تاریخ تولد بیمار" />
                 <span class="text-xs font-semibold text-red-600">*تاریخ تولد بیمار اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">شماره تماس بیمار</span>
                 <input type="text" class="request-input" placeholder="شماره تماس بیمار" />
                 <span class="text-xs font-semibold text-red-600">*شماره تماس بیمار اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">شماره تماس همراه بیمار</span>
                 <input type="text" class="request-input" placeholder="شماره تماس همراه بیمار" />
                 <span class="text-xs font-semibold text-red-600">*شماره تماس همراه بیمار اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">جنسیت بیمار</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm">
                   <option value="" selected disabled>جنسیت بیمار</option>
@@ -184,7 +184,7 @@
                 </select>
                 <span class="text-xs font-semibold text-red-600">*جنسیت بیمار اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">قومیت بیمار</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm">
                   <option value="" selected disabled>قومیت بیمار</option>
@@ -203,7 +203,7 @@
                 </select>
                 <span class="text-xs font-semibold text-red-600">*قومیت بیمار اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">خویشاوندی</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm" x-model="consanguinity">
                   <option value="" selected disabled>خویشاوندی</option>

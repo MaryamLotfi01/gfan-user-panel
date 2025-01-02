@@ -149,29 +149,29 @@
             </div>
             <!-- Inputs -->
             <div class="grid grid-cols-12 gap-4" x-data="{fatherClinical:'',motherClinical:''}">
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">نام مادر</span>
                 <input type="text" class="request-input" placeholder="نام مادر" />
                 <span class="text-xs font-semibold text-red-600">*نام مادر اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">تاریخ تولد مادر</span>
                 <input type="text" id="mother_birthdate" class="hidden" name="birthdate" />
                 <input type="text" id="mother_birthdate_view" class="request-input" placeholder="تاریخ تولد مادر" />
                 <span class="text-xs font-semibold text-red-600">*تاریخ تولد مادر اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">نام پدر</span>
                 <input type="text" class="request-input" placeholder="نام پدر" />
                 <span class="text-xs font-semibold text-red-600">*نام پدر اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">تاریخ تولد پدر</span>
                 <input type="text" id="father_birthdate" class="hidden" name="birthdate" />
                 <input type="text" id="father_birthdate_view" class="request-input" placeholder="تاریخ تولد پدر" />
                 <span class="text-xs font-semibold text-red-600">*تاریخ تولد پدر اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">سابقه بیماری مادر</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm" x-model="motherClinical">
                   <option value="" selected disabled>سابقه بیماری مادر</option>
@@ -180,7 +180,7 @@
                 </select>
                 <span class="text-xs font-semibold text-red-600">*سابقه بیماری مادر اجباری می باشد</span>
               </div>
-              <div class="col-span-3 flex flex-col gap-y-2">
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">سابقه بیماری پدر</span>
                 <select class="bg-secondary px-4 py-2 rounded-lg text-sm" x-model="fatherClinical">
                   <option value="" selected disabled>سابقه بیماری پدر</option>
