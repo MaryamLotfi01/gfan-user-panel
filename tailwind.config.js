@@ -18,6 +18,8 @@ module.exports = {
       },
       fontFamily: {
         raleway: "Raleway",
+        FontAwesome: "FontAwesome",
+        dana: "dana",
       },
     },
   },

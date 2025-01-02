@@ -54,6 +54,9 @@
   display: none !important;
 }
 
+.ui-dialog {
+  direction: ltr;
+}
 @layer components {
   .flex-center {
     @apply flex items-center justify-center;
@@ -118,5 +121,21 @@
   }
   .request-input {
     @apply bg-secondary rounded-lg px-4 py-2 text-sm text-black outline-none;
+  }
+  .active-request-step {
+    @apply text-black underline underline-offset-2 decoration-primary;
+  }
+  .ui-button {
+    @apply !font-dana;
+  }
+  .checkbox-inline,
+  .radio-inline {
+    @apply mr-4;
+  }
+  .ui-dialog-content table td {
+    @apply py-1;
+  }
+  .ui-dialog-titlebar {
+    @apply overflow-hidden;
   }
 }
