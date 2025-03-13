@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../../jalalidatepicker/persian-datepicker.min.css" />
+    <link rel="stylesheet" href="../../../jdate/jalalidatepicker.css" />
     <link rel="stylesheet" href="../../../css/main.css" />
     <title>Document</title>
   </head>
@@ -148,7 +148,7 @@
               <p>آزمایشات انجام شده</p>
             </div>
             <!-- Inputs -->
-            <div class="grid grid-cols-12 gap-4" x-data="{consanguinity:''}">
+            <form action="#" onsubmit="checkData(this)" class="grid grid-cols-12 gap-4" x-data="{consanguinity:''}">
               <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">نام بیمار</span>
                 <input type="text" class="request-input" placeholder="نام بیمار" />
@@ -161,8 +161,8 @@
               </div>
               <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
                 <span class="text-xs font-semibold">تاریخ تولد بیمار</span>
-                <input type="text" id="birthdate" class="hidden" name="birthdate" />
-                <input type="text" id="birthdate_view" class="request-input" placeholder="تاریخ تولد بیمار" />
+                <input type="text" class="request-input" id="birthdate-view" data-jdp placeholder="لطفا یک تاریخ وارد نمایید" data-jdp-only-date />
+                <input type="datetime" class="hidden" id="birthdate" />
                 <span class="text-xs font-semibold text-red-600">*تاریخ تولد بیمار اجباری می باشد</span>
               </div>
               <div class="lg:col-span-3 sm:col-span-6 col-span-12 flex flex-col gap-y-2">
@@ -221,21 +221,19 @@
               <div class="col-span-12">
                 <button class="py-2 px-4 bg-green-600 text-white text-sm font-semibold rounded-5 min-w-20">بعدی</button>
               </div>
-            </div>
+            </form>
           </div>
         </section>
       </main>
     </section>
     <script src="../../../js/jquery-3.5.1.min.js"></script>
     <script src="../../../js/Alpine.min.js"></script>
-    <script src="../../../jalalidatepicker/persian-datepicker.min.js"></script>
-    <script src="../../../jalalidatepicker/persian-date.min.js"></script>
+    <script src="../../../jdate/jalalidatepicker.min.js"></script>
+    <script src="../../../js/jalalidatePickerConverter.js"></script>
     <script>
       $(document).ready(() => {
-        $("#birthdate_view").persianDatepicker({
-          format: "YYYY/MM/DD",
-          altField: "#birthdate",
-        });
+        jalaliDatepicker.startWatch({});
+        jDateConverter("birthdate");
       });
     </script>
   </body>

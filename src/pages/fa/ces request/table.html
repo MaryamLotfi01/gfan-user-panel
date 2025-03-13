@@ -136,7 +136,7 @@
             <div class="overflow-auto w-full">
               <table class="w-full user-table">
                 <thead class="bg-primary text-white">
-                  <tr class="text-right table-row">
+                  <tr class="text-right text-sm">
                     <th>#</th>
                     <th class="w-2/12">نام درخواست</th>
                     <th class="w-2/12">نام بیمار</th>
@@ -176,7 +176,7 @@
                     <td>CES</td>
                     <td>محمدامین شهریاری</td>
                     <td>
-                      <span class="request-status completed">ثبت شده</span>
+                      <span class="request-status filled">آماده برای ارسال</span>
                     </td>
                     <td>
                       <span class="request-status inprogress">پرداخت شده</span>
@@ -198,7 +198,7 @@
                     <td>CES</td>
                     <td>محمدامین شهریاری</td>
                     <td>
-                      <span class="request-status checking">در حال بررسی</span>
+                      <span class="request-status awaiting-secretary">در انتظار پذیرش</span>
                     </td>
                     <td>
                       <span class="request-status inprogress">پرداخت شده</span>
@@ -220,7 +220,7 @@
                     <td>CES</td>
                     <td>محمدامین شهریاری</td>
                     <td>
-                      <span class="request-status inprogress">در حال انجام</span>
+                      <span class="request-status admitted">پذیرش شده</span>
                     </td>
                     <td>
                       <span class="request-status inprogress">پرداخت شده</span>
@@ -242,7 +242,7 @@
                     <td>CES</td>
                     <td>محمدامین شهریاری</td>
                     <td>
-                      <span class="request-status canceled">کنسل شده</span>
+                      <span class="request-status awaiting-payment">در انتظار پرداخت</span>
                     </td>
                     <td>
                       <span class="request-status inprogress">پرداخت شده</span>
@@ -264,7 +264,117 @@
                     <td>CES</td>
                     <td>محمدامین شهریاری</td>
                     <td>
-                      <span class="request-status finished">اتمام یافته</span>
+                      <span class="request-status dna-extraction">در حال استخراج DNA</span>
+                    </td>
+                    <td>
+                      <span class="request-status inprogress">پرداخت شده</span>
+                    </td>
+                    <td>1403/07/18</td>
+                    <td>
+                      <span class="whitespace-nowrap">GREQ-1319087600</span>
+                    </td>
+                    <td>
+                      <div class="flex items-center gap-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">تکمیل</a>
+                        <a href="#" class="bg-green-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">دانلود</a>
+                        <a href="#" class="bg-red-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">لغو درخواست</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-sm">
+                    <td>6</td>
+                    <td>CES</td>
+                    <td>محمدامین شهریاری</td>
+                    <td>
+                      <span class="request-status sent-abroad">ارسال به خارج از کشور</span>
+                    </td>
+                    <td>
+                      <span class="request-status inprogress">پرداخت شده</span>
+                    </td>
+                    <td>1403/07/18</td>
+                    <td>
+                      <span class="whitespace-nowrap">GREQ-1319087600</span>
+                    </td>
+                    <td>
+                      <div class="flex items-center gap-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">تکمیل</a>
+                        <a href="#" class="bg-green-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">دانلود</a>
+                        <a href="#" class="bg-red-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">لغو درخواست</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-sm">
+                    <td>6</td>
+                    <td>CES</td>
+                    <td>محمدامین شهریاری</td>
+                    <td>
+                      <span class="request-status sequencing-stage">در مرحله سکانس</span>
+                    </td>
+                    <td>
+                      <span class="request-status inprogress">پرداخت شده</span>
+                    </td>
+                    <td>1403/07/18</td>
+                    <td>
+                      <span class="whitespace-nowrap">GREQ-1319087600</span>
+                    </td>
+                    <td>
+                      <div class="flex items-center gap-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">تکمیل</a>
+                        <a href="#" class="bg-green-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">دانلود</a>
+                        <a href="#" class="bg-red-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">لغو درخواست</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-sm">
+                    <td>6</td>
+                    <td>CES</td>
+                    <td>محمدامین شهریاری</td>
+                    <td>
+                      <span class="request-status under-analysis">در دست آنالیزور</span>
+                    </td>
+                    <td>
+                      <span class="request-status inprogress">پرداخت شده</span>
+                    </td>
+                    <td>1403/07/18</td>
+                    <td>
+                      <span class="whitespace-nowrap">GREQ-1319087600</span>
+                    </td>
+                    <td>
+                      <div class="flex items-center gap-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">تکمیل</a>
+                        <a href="#" class="bg-green-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">دانلود</a>
+                        <a href="#" class="bg-red-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">لغو درخواست</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-sm">
+                    <td>6</td>
+                    <td>CES</td>
+                    <td>محمدامین شهریاری</td>
+                    <td>
+                      <span class="request-status completed">تکمیل شده</span>
+                    </td>
+                    <td>
+                      <span class="request-status inprogress">پرداخت شده</span>
+                    </td>
+                    <td>1403/07/18</td>
+                    <td>
+                      <span class="whitespace-nowrap">GREQ-1319087600</span>
+                    </td>
+                    <td>
+                      <div class="flex items-center gap-x-2">
+                        <a href="#" class="bg-blue-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">تکمیل</a>
+                        <a href="#" class="bg-green-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">دانلود</a>
+                        <a href="#" class="bg-red-600 text-white px-2 py-1 text-xs font-semibold rounded-5 whitespace-nowrap">لغو درخواست</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-sm">
+                    <td>6</td>
+                    <td>CES</td>
+                    <td>محمدامین شهریاری</td>
+                    <td>
+                      <span class="request-status cancelled">کنسل شده</span>
                     </td>
                     <td>
                       <span class="request-status inprogress">پرداخت شده</span>
