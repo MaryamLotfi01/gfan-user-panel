@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <title>صفحه قابل چاپ با هدر ثابت و فاصله مناسب</title>
+    <style>
+      @media print {
+        @page {
+          size: A4;
+          margin: 5mm 10mm 10mm;
+        }
+        .header,
+        .header-space,
+        .footer,
+        .footer-space {
+          width: 100%;
+          height: unset;
+        }
+        .header img {
+          height: unset;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- Header section -->
+      <thead style="display: table-header-group">
+        <tr>
+          <td>
+            <div class="header">
+              <img src="../../img/printable/Header.png" alt="" />
+            </div>
+          </td>
+        </tr>
+      </thead>
+
+      <!-- Body or content section -->
+      <tbody>
+        <tr>
+          <td>
+            <div id="content" class="min-h-screen"></div>
+            <script>
+              const element = document.getElementById("content");
+              for (let index = 0; index < 100; index++) {
+                element.innerHTML += `<p>Niaou muning nyav nyā mjau miauw myām̥ō. Mi'au meong meow miaou. Mjá miav miaou meow. Mi'au niaou muning nyā
+                    meow njäu njäu meong miyāʾūṉ miaŭ. Miyav mi'au meow. Miyav meow mi'au nyā ngiyaw. Ngeung myau meo mjau. Miaŭ
+                    muning meogre miaou miav. Mjá nyā nyā mjau mjá myau mjau mi'au mňau myau. Myām̥ō njäu miauw ya-ong meo njäu.</p>`;
+              }
+            </script>
+          </td>
+        </tr>
+      </tbody>
+
+      <!-- Footer section -->
+      <tfoot style="display: table-footer-group">
+        <tr>
+          <td>
+            <div class="footer">
+              <img src="../../img/footer.png" alt="" />
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
